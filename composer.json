@@ -1,7 +1,14 @@
 {
     "name": "orchestra/control",
     "description": "Control Extension for Orchestra Platform",
-    "keywords": ["orchestra-platform", "orchestral", "extension", "laravel", "rbac", "theme"],
+    "keywords": [
+        "orchestra-platform",
+        "orchestral",
+        "extension",
+        "laravel",
+        "rbac",
+        "theme"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -12,27 +19,49 @@
     ],
     "autoload": {
         "psr-4": {
-            "Orchestra\\Control\\" : "src/"
+            "Orchestra\\Control\\": "src/"
         },
         "classmap": [
             "database/migrations"
         ]
     },
     "require": {
-        "php": "^7.3 || ^8.0",
-        "illuminate/database": "^8.37",
-        "orchestra/contracts": "^6.0",
-        "orchestra/extension": "^6.0",
-        "orchestra/support": "^6.0"
+        "php": " ^8.0",
+        "illuminate/database": "^9.0",
+        "orchestra/contracts": "7.x-dev",
+        "orchestra/extension": "7.x-dev",
+        "orchestra/support": "7.x-dev"
     },
     "require-dev": {
-        "orchestra/foundation": "^6.0",
-        "orchestra/testing": "^6.0"
+        "orchestra/foundation": "7.x-dev",
+        "orchestra/testing": "7.x-dev"
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "6.0-dev"
+            "dev-master": "7.0-dev"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/contracts"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/extension"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/support"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/foundation"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/testing"
+        }
+    ]
 }
